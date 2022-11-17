@@ -55,7 +55,7 @@ def scrape_brave_images():
 
         # Start new opener (for downloading).
         opener = urllib.request.build_opener()
-        # Add user agent to minimise getting blocked for being a bot.
+        # Add user agent to minimise (not elimate) getting blocked for being a bot.
         opener.addheaders = [('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36')]
         # Install opener onto the requests.
         urllib.request.install_opener(opener)
